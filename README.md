@@ -13,7 +13,9 @@ The main file is in XML format. Each interaction has a root tag \texttt{<record>
 - "date circulation YYYYMMDD" - date in yyyy/mm/dd format when the event took place;
 
 ## Code structure
-Please use `xml_parsing.py` to process `medlib.xml` into dataframe in case You need .csv format files. Notebooks with model training and metrics:
+Please use `xml_parsing.py` to process `medlib.xml` into dataframe in case you need .csv format files. 
+  
+Notebooks with model training and metrics are:
 - `NeuFM.ipynb` - Uses NCF (NeuFM) model from cornac module.
 - `kmean+als+lightfm.ipynb` - Uses cluster modeling, ALS and LightFM.
 - `kmeans+fasttext.ipynb` - First creates txt file of users interactions history for fasttext model training (unsupervised). Then vector representations from fasttext model being used for clusterization.
